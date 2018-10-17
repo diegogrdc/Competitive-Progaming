@@ -1,12 +1,18 @@
 //  Copyright © 2018 Diego Garcia Rodriguez del Campo. All rights reserved.
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
-string s;
+int N;
+double total, num;
+
 int main()
 {
-    cin >> s;
-    for( int i = 0; i < s.size(); i ++ )
-        cout << s[i] << "\n";
+    cin >> N;
+    for( int i = 1; i <= N; i ++ )
+    {
+        cin >> num;
+        total += num;
+    }
+    cout << fixed << setprecision( 2 ) << total / N << "\n";
     return 0;
 }
